@@ -106,79 +106,76 @@ const tunesSection = document.querySelector('.tunes');
 
 
 
+
 document.querySelector('.romantic').addEventListener('click',()=>{
-    document.body.style.color="red";
-    document.body.style.backgroundColor="pink";
-    
-        tunesSection.innerHTML=`<div class="tunes-container">
-                    <div class="tunes-item">
-                        <div class="thumbnail"><img src="${list.romantic.song1.img}" alt="" width="100px"></div>
-                        <div class="song-name">${list.romantic.song1.name}</div>
-                        <div class="artist">${list.romantic.song1.artist}</div>
-                        <div class="audio-player">
-                            <audio id="myAudio" src="your-audio.mp3"></audio>
-                            <i class="fa fa-play play-button" aria-hidden="true"></i>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
-                        </div>
-                        <div class="spotify-link"><a href="#">Spotify</a></div>
-                    </div>
-                    <div class="tunes-item">
-                        <div class="thumbnail"><img src="${list.romantic.song1.img}" alt="" width="100px"></div>
-                        <div class="song-name">${list.romantic.song2.name}</div>
-                        <div class="artist">${list.romantic.song2.artist}</div>
-                         <div class="audio-player">
-                            <audio id="myAudio" src="your-audio.mp3"></audio>
-                            <i class="fa fa-play play-button" aria-hidden="true"></i>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
-                        </div>
-                        <div class="spotify-link"><a href="#">Spotify</a></div>
-                    </div>
-                    <div class="tunes-item">
-                        <div class="thumbnail"><img src="${list.romantic.song1.img}" alt="" width="100px"></div>
-                        <div class="song-name">${list.romantic.song3.name}</div>
-                        <div class="artist">${list.romantic.song3.artist}</div>
-                        <div class="audio-player">
-                            <audio id="myAudio" src="your-audio.mp3"></audio>
-                            <i class="fa fa-play play-button" aria-hidden="true"></i>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
-                        </div>
-                        <div class="spotify-link"><a href="#">Spotify</a></div>
-                    </div>
-                    <div class="tunes-item">
-                        <div class="thumbnail"><img src="${list.romantic.song1.img}" alt="" width="100px"></div>
-                        <div class="song-name">${list.romantic.song4.name}</div>
-                        <div class="artist">${list.romantic.song4.artist}</div>
-                         <div class="audio-player">
-                            <audio id="myAudio" src="your-audio.mp3"></audio>
-                            <i class="fa fa-play play-button" aria-hidden="true"></i>
-                            <div class="progress-container">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
-                        </div>
-                        <div class="spotify-link"><a href="#">Spotify</a></div>
-                    </div>
-                </div>`;
+    tunesSection.innerHTML=`<div class="tunes-container">
+    <div class="tunes-item">
+        <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
+        <div class="song-name">${list.energetic.song1.name}</div>
+        <div class="artist">${list.energetic.song1.artist}</div>
+        <div class="audio-player">
+            <audio id="myAudio" src="your-audio.mp3"></audio>
+            <i class="fa fa-play play-button" aria-hidden="true"></i>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+        </div>
+        <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
+    </div>
+    <div class="tunes-item">
+        <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
+        <div class="song-name">${list.energetic.song2.name}</div>
+        <div class="artist">${list.energetic.song2.artist}</div>
+         <div class="audio-player">
+            <audio id="myAudio" src="your-audio.mp3"></audio>
+            <i class="fa fa-play play-button" aria-hidden="true"></i>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+        </div>
+        <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
+    </div>
+    <div class="tunes-item">
+        <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
+        <div class="song-name">${list.energetic.song3.name}</div>
+        <div class="artist">${list.energetic.song3.artist}</div>
+        <div class="audio-player">
+            <audio id="myAudio" src="your-audio.mp3"></audio>
+            <i class="fa fa-play play-button" aria-hidden="true"></i>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+        </div>
+        <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
+    </div>
+    <div class="tunes-item">
+        <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
+        <div class="song-name">${list.energetic.song4.name}</div>
+        <div class="artist">${list.energetic.song4.artist}</div>
+         <div class="audio-player">
+            <audio id="myAudio" src="your-audio.mp3"></audio>
+            <i class="fa fa-play play-button" aria-hidden="true"></i>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+        </div>
+        <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
+    </div>
+</div>`;
+
                 setTimeout(()=>{
                     document.querySelector('.tunes').classList.add('show');
-                    
+                    themeChange("#ffe0f0", "#8b004f");
                 },10);
 });
 
         
 
 document.querySelector('.energetic').addEventListener('click',()=>{
-    document.body.style.color="orange";
-    document.body.style.backgroundColor="blue";
     tunesSection.innerHTML=`<div class="tunes-container">
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
@@ -192,7 +189,7 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
@@ -206,7 +203,7 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
@@ -220,7 +217,7 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
@@ -234,18 +231,17 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
         </div>`;
 
         setTimeout(()=>{
             document.querySelector('.tunes').classList.add('show');
+            themeChange("#fff4db", "#e67e00");
         },10);
 });
 
 document.querySelector('.chill').addEventListener('click',()=>{
-    document.body.style.color="green";
-    document.body.style.backgroundColor="grey";
     tunesSection.innerHTML=`<div class="tunes-container">
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.chill.song1.img}" alt="" width="100px"></div>
@@ -259,7 +255,7 @@ document.querySelector('.chill').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.chill.song1.img}" alt="" width="100px"></div>
@@ -273,7 +269,7 @@ document.querySelector('.chill').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.chill.song1.img}" alt="" width="100px"></div>
@@ -287,7 +283,7 @@ document.querySelector('.chill').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
                 <div class="thumbnail"><img src="${list.chill.song1.img}" alt="" width="100px"></div>
@@ -301,80 +297,106 @@ document.querySelector('.chill').addEventListener('click',()=>{
                     </div>
                     <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
+                <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
         </div>`;
 
         setTimeout(()=>{
             document.querySelector('.tunes').classList.add('show');
+            themeChange("#e0f7fa", "#006064");
         },10);
 });
 
 document.querySelector('.depression').addEventListener('click',()=>{
-    document.body.style.color="white";
-    document.body.style.backgroundColor="black";
-    tunesSection.innerHTML=`<div class="tunes-container">
-            <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song1.name}</div>
-                <div class="artist">${list.depression.song1.artist}</div>
-                <div class="audio-player">
-                    <audio id="myAudio" src="your-audio.mp3"></audio>
-                    <i class="fa fa-play play-button" aria-hidden="true"></i>
-                    <div class="progress-container">
-                        <div class="progress-bar"></div>
+        tunesSection.innerHTML=`<div class="tunes-container">
+                <div class="tunes-item">
+                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="song-name">${list.depression.song1.name}</div>
+                    <div class="artist">${list.depression.song1.artist}</div>
+                    <div class="audio-player">
+                        <audio id="myAudio" src="your-audio.mp3"></audio>
+                        <i class="fa fa-play play-button" aria-hidden="true"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                     </div>
-                    <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+                    <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
-            </div>
-            <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song2.name}</div>
-                <div class="artist">${list.depression.song2.artist}</div>
-                 <div class="audio-player">
-                    <audio id="myAudio" src="your-audio.mp3"></audio>
-                    <i class="fa fa-play play-button" aria-hidden="true"></i>
-                    <div class="progress-container">
-                        <div class="progress-bar"></div>
+                <div class="tunes-item">
+                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="song-name">${list.depression.song2.name}</div>
+                    <div class="artist">${list.depression.song2.artist}</div>
+                     <div class="audio-player">
+                        <audio id="myAudio" src="your-audio.mp3"></audio>
+                        <i class="fa fa-play play-button" aria-hidden="true"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                     </div>
-                    <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+                    <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
-            </div>
-            <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song3.name}</div>
-                <div class="artist">${list.depression.song3.artist}</div>
-                <div class="audio-player">
-                    <audio id="myAudio" src="your-audio.mp3"></audio>
-                    <i class="fa fa-play play-button" aria-hidden="true"></i>
-                    <div class="progress-container">
-                        <div class="progress-bar"></div>
+                <div class="tunes-item">
+                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="song-name">${list.depression.song3.name}</div>
+                    <div class="artist">${list.depression.song3.artist}</div>
+                    <div class="audio-player">
+                        <audio id="myAudio" src="your-audio.mp3"></audio>
+                        <i class="fa fa-play play-button" aria-hidden="true"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                     </div>
-                    <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+                    <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
-            </div>
-            <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song4.name}</div>
-                <div class="artist">${list.depression.song4.artist}</div>
-                 <div class="audio-player">
-                    <audio id="myAudio" src="your-audio.mp3"></audio>
-                    <i class="fa fa-play play-button" aria-hidden="true"></i>
-                    <div class="progress-container">
-                        <div class="progress-bar"></div>
+                <div class="tunes-item">
+                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="song-name">${list.depression.song4.name}</div>
+                    <div class="artist">${list.depression.song4.artist}</div>
+                     <div class="audio-player">
+                        <audio id="myAudio" src="your-audio.mp3"></audio>
+                        <i class="fa fa-play play-button" aria-hidden="true"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
                     </div>
-                    <i class="fa fa-volume-up volume-on" aria-hidden="true"></i>
+                    <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
-                <div class="spotify-link"><a href="#">Spotify</a></div>
-            </div>
-        </div>`;
+            </div>`;
+   
 
         setTimeout(()=>{
             document.querySelector('.tunes').classList.add('show');
+            themeChange("#1a1a1a", "#ccc");
         },10);
+
 });
+
+
+// for the link color change:
+function themeChange(bgcolour,colour){
+    document.body.style.backgroundColor=`${bgcolour}`;
+    document.body.style.color=`${colour}`;
+    const  links = document.body.querySelectorAll('a');
+    links.forEach(link=>{
+        link.style.color=`${colour}`;
+    });
+    const tuneItems= document.querySelectorAll('.tunes-item');
+    tuneItems.forEach(item=>{
+        item.style.backgroundColor=`${colour}`;
+        item.style.color=`${bgcolour}`;
+    });
+    const spotifyLink =document.querySelectorAll('.spo-link');
+    spotifyLink.forEach(spotify=>{
+        spotify.style.color=`${bgcolour}`;
+    })
+};
+
+
+
+
 
 

@@ -1,6 +1,4 @@
-body a ,body{
-   color: yellow;
-}
+
 
 .navbar{
     background-color: transparent;
@@ -11,6 +9,7 @@ body a ,body{
 }
 
 .navbar a {
+    color: black;
     text-decoration: none;
 
 }
@@ -57,10 +56,10 @@ body a ,body{
 }
 
 .category a{
-
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
-    border: 1px solid #000000 ;
+    border: 1px solid rgb(0, 0, 0) ;
     border-radius: 20px;
 }
 
@@ -84,7 +83,6 @@ body a ,body{
 
 
 .tunes-item{
-    background-color:#2D2D2D;
     border-radius: 5%;
     padding: 20px 20px;
     padding-top: 30px;
@@ -112,7 +110,6 @@ body a ,body{
 }
 
 .song-name{
-    color: white;
     margin: 0;
     padding: 0;
     place-self: center;
@@ -121,7 +118,6 @@ body a ,body{
 }
 
 .artist{
-    color: white;
     margin: 0;
     padding: 0;
     place-self: center;
@@ -173,24 +169,17 @@ body a ,body{
 
   .spotify-link a{
     text-decoration: none;
-    
-    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: none;
-    transition: all 1s ease;
+    transition: all 0.4s ease;
   }
 
   .spotify-link a:hover{
-    border: 1px solid white;
+    border: 1px solid transparent;
   }
 
 
   /* for romantic theme */
 
-
-  .romantic-theme{
-    background-color:yellow;
-    color : red;
-}
