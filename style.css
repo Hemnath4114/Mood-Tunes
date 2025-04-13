@@ -1,4 +1,6 @@
-
+body{
+    transition: all 1s ease-in-out;
+}
 
 .navbar{
     background-color: transparent;
@@ -78,14 +80,20 @@
 .tunes{
     opacity: 0;
     transform: translateY(-10px);
+    transform: translateX(-10px);
     transition: all 1s ease-in-out;
 }
 
 
 .tunes-item{
-    border-radius: 5%;
-    padding: 20px 20px;
-    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:   0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.15),0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
     display: grid;
     grid-template-rows: 1fr auto auto 1fr auto;
     row-gap: 0;
@@ -93,6 +101,7 @@
 .show{
     opacity: 1;
     transform: translateY(0);
+    transform: translateX(0);
     
 }
 
@@ -140,6 +149,7 @@
 
 
 .play-button {
+    cursor: pointer;
     place-self: center start;
     font-size: 15px;
     color: black ;
@@ -147,18 +157,27 @@
   }
 
   .volume-on{
+    cursor: pointer;
     font-size: 15px;
     color: black;
     place-self: center end;
   }
   
   .progress-container{
+    align-content: center;
     place-self: center;
     background-color: black;
     width: 100%;
     height: 4px;
     border-radius: 10px;
   }
+
+  .progress-bar{
+    background-color: rgb(105, 104, 104);
+    width: 0%;
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+    }
 
   .spotify-link{
     display: flex;
