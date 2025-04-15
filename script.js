@@ -2,23 +2,27 @@ const list = {
     romantic:{
         song1:{
             img: "/images/green.jpg",
-            name: "Dheema",
-            artist: "Anirudh",
+            name: "Apocalypse",
+            artist: "Cigarettes After Sex",
+            src: "./songs/Romantic/Apocalypse.mp3"
         },
         song2:{
             img: "/images/green.jpg",
-            name: "Kadhal Kanave",
-            artist: "Aldon",
+            name: "Heavenly",
+            artist: "Cigarettes After Sex",
+            src: "./songs/Romantic/Heavenly.mp3"
         },
         song3:{
             img: "/images/green.jpg",
             name: "Wanna be yours",
-            artist: "Artic Monkey",
+            artist: "Artic Monkeys",
+            src:"songs/Romantic/I wanna be yours .mp3"
         },
         song4:{
             img: "/images/green.jpg",
-            name: "Nilave vaa",
-            artist: "Illayaraja",
+            name: "Golden Hous",
+            artist: "JVKE",
+            src:"songs/Romantic/JVKE - golden hour.mp3"
         }
         
     },
@@ -26,23 +30,27 @@ const list = {
     energetic:{
         song1:{
             img: "/images/green.jpg",
-            name: "Veera Soora",
-            artist: "Yuvan",
+            name: "All The Stars",
+            artist: "Kedrick, SZA",
+            src:"songs/energetic/All The Stars.mp3"
         },
         song2:{
             img: "/images/green.jpg",
-            name: "Rayapuram Peteru",
-            artist: "Anirudh",
+            name: "Blinding lights",
+            artist: "Weeknd",
+            src:"songs/energetic/Blinding lights.mp3"
         },
         song3:{
             img: "/images/green.jpg",
-            name: "What a karuvadu",
-            artist: "Anirudh",
+            name: "F!en",
+            artist: "Travis Scott",
+            src:"songs/energetic/F!EN nokia ringtone.mp3"
         },
         song4:{
             img: "/images/green.jpg",
-            name: "Pumped up kicks",
-            artist: "Foster the People",
+            name: "Not Like Us",
+            artist: "Kendrick Lamar",
+            src:"songs/energetic/Not Like Us .mp3"
         }
         
     },
@@ -50,23 +58,27 @@ const list = {
     chill:{
         song1:{
             img: "/images/green.jpg",
-            name: "Blue",
-            artist: "Yung kai" ,
+            name: "Boa Duvet",
+            artist: "Boa",
+            src:"songs/chill/Boa Duvet Best Part .mp3"
         },
         song2:{
             img: "/images/green.jpg",
-            name: "Beanie",
-            artist: "Chezile",
+            name: "Espresso",
+            artist: "Sabrina Carpenter",
+            src:"songs/chill/Espresso.mp3"
         },
         song3:{
             img: "/images/green.jpg",
-            name: "Kathalikkum",
-            artist: "Malathy Laxman",
+            name: "Let me down ",
+            artist: "Alec Benjamin",
+            src:"songs/chill/Let me down slowly.mp3"
         },
         song4:{
             img: "/images/green.jpg",
-            name: "I Ain't worried",
-            artist: "OneRepublic",
+            name: "Sunroof",
+            artist: "Nicky Youre",
+            src:"songs/chill/Sunroof .mp3"
         }
         
     },
@@ -74,23 +86,27 @@ const list = {
     depression:{
         song1:{
             img: "/images/green.jpg",
-            name: "Heavenly",
-            artist: "Cigarettes After Sex",
+            name: "Lonely",
+            artist: "Akon",
+            src:"songs/depression/Akon lonley .mp3"
         },
         song2:{
             img: "/images/green.jpg",
-            name: "Dead Man",
-            artist: "David Kushner",
+            name: "Luminary",
+            artist: "Joel Sunny",
+            src:"songs/depression/Luminary.mp3"
         },
         song3:{
             img: "/images/green.jpg",
-            name: "Cry",
-            artist: "Cigarettes After Sex",
+            name: "Arcade",
+            artist: "Ducane Laurence",
+            src:"songs/depression/Arcade .mp3"
         },
         song4:{
             img: "/images/green.jpg",
-            name: "Apocalypse",
-            artist: "Cigarettes After Sex",
+            name: "Somewhere Only",
+            artist: "Keane",
+            src:"songs/depression/Somwere only we know.mp3"
         }
         
     },
@@ -106,11 +122,11 @@ document.querySelector('.romantic').addEventListener('click',()=>{
     tunesSection.classList.remove('show');
     tunesSection.innerHTML=`<div class="tunes-container">
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song1.name}</div>
-                <div class="artist">${list.depression.song1.artist}</div>
+                <div class="thumbnail"><img src="${list.romantic.song1.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.romantic.song1.name}</div>
+                <div class="artist">${list.romantic.song1.artist}</div>
                 <div class="audio-player">
-                    <audio loop  class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop  class="myAudio" src="${list.romantic.song1.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -120,11 +136,11 @@ document.querySelector('.romantic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song2.name}</div>
-                <div class="artist">${list.depression.song2.artist}</div>
+                <div class="thumbnail"><img src="${list.romantic.song2.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.romantic.song2.name}</div>
+                <div class="artist">${list.romantic.song2.artist}</div>
                  <div class="audio-player">
-                    <audio loop class="myAudio"src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio"src="${list.romantic.song2.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -134,11 +150,11 @@ document.querySelector('.romantic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song3.name}</div>
-                <div class="artist">${list.depression.song3.artist}</div>
+                <div class="thumbnail"><img src="${list.romantic.song3.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.romantic.song3.name}</div>
+                <div class="artist">${list.romantic.song3.artist}</div>
                 <div class="audio-player">
-                    <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio" src="${list.romantic.song3.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -148,11 +164,11 @@ document.querySelector('.romantic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song4.name}</div>
-                <div class="artist">${list.depression.song4.artist}</div>
+                <div class="thumbnail"><img src="${list.romantic.song4.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.romantic.song4.name}</div>
+                <div class="artist">${list.romantic.song4.artist}</div>
                  <div class="audio-player">
-                    <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio" src="${list.romantic.song4.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -165,8 +181,8 @@ document.querySelector('.romantic').addEventListener('click',()=>{
         
     setTimeout(()=>{
         tunesSection.classList.add('show');
-        themeChange("#ffe6e6", "#3a3a3a");
-    },500);
+        themeChange("#ffe6e6", "#3a3a3a","Great Vibes","cursive");
+    },1000);
     playPause();
 });
 
@@ -174,11 +190,11 @@ document.querySelector('.energetic').addEventListener('click',()=>{
     tunesSection.classList.remove('show');
     tunesSection.innerHTML=`<div class="tunes-container">
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song1.name}</div>
-                <div class="artist">${list.depression.song1.artist}</div>
+                <div class="thumbnail"><img src="${list.energetic.song1.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.energetic.song1.name}</div>
+                <div class="artist">${list.energetic.song1.artist}</div>
                 <div class="audio-player">
-                    <audio loop  class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop  class="myAudio" src="${list.energetic.song1.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -188,11 +204,11 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song2.name}</div>
-                <div class="artist">${list.depression.song2.artist}</div>
+                <div class="thumbnail"><img src="${list.energetic.song2.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.energetic.song2.name}</div>
+                <div class="artist">${list.energetic.song2.artist}</div>
                  <div class="audio-player">
-                    <audio loop class="myAudio"src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio"src="${list.energetic.song2.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -202,11 +218,11 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song3.name}</div>
-                <div class="artist">${list.depression.song3.artist}</div>
+                <div class="thumbnail"><img src="${list.energetic.song3.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.energetic.song3.name}</div>
+                <div class="artist">${list.energetic.song3.artist}</div>
                 <div class="audio-player">
-                    <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio" src="${list.energetic.song3.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -216,11 +232,11 @@ document.querySelector('.energetic').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song4.name}</div>
-                <div class="artist">${list.depression.song4.artist}</div>
+                <div class="thumbnail"><img src="${list.energetic.song4.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.energetic.song4.name}</div>
+                <div class="artist">${list.energetic.song4.artist}</div>
                  <div class="audio-player">
-                    <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio" src="${list.energetic.song4.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -233,8 +249,8 @@ document.querySelector('.energetic').addEventListener('click',()=>{
         
     setTimeout(()=>{
         tunesSection.classList.add('show');
-        themeChange("#fff3b0", "#1f1f1f");
-    },500);
+        themeChange("#fff3b0", "#1f1f1f","Bebas Neue"," sans-serif");
+    },1000);
     playPause();
 });
 
@@ -242,11 +258,11 @@ document.querySelector('.chill').addEventListener('click',()=>{
     tunesSection.classList.remove('show');
     tunesSection.innerHTML=`<div class="tunes-container">
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song1.name}</div>
-                <div class="artist">${list.depression.song1.artist}</div>
+                <div class="thumbnail"><img src="${list.chill.song1.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.chill.song1.name}</div>
+                <div class="artist">${list.chill.song1.artist}</div>
                 <div class="audio-player">
-                    <audio  loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio  loop class="myAudio" src="${list.chill.song1.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -256,11 +272,11 @@ document.querySelector('.chill').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song2.name}</div>
-                <div class="artist">${list.depression.song2.artist}</div>
+                <div class="thumbnail"><img src="${list.chill.song2.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.chill.song2.name}</div>
+                <div class="artist">${list.chill.song2.artist}</div>
                  <div class="audio-player">
-                    <audio loop  class="myAudio"src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop  class="myAudio"src="${list.chill.song2.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -270,11 +286,11 @@ document.querySelector('.chill').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song3.name}</div>
-                <div class="artist">${list.depression.song3.artist}</div>
+                <div class="thumbnail"><img src="${list.chill.song3.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.chill.song3.name}</div>
+                <div class="artist">${list.chill.song3.artist}</div>
                 <div class="audio-player">
-                    <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop class="myAudio" src="${list.chill.song3.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -284,11 +300,11 @@ document.querySelector('.chill').addEventListener('click',()=>{
                 <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
             </div>
             <div class="tunes-item">
-                <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
-                <div class="song-name">${list.depression.song4.name}</div>
-                <div class="artist">${list.depression.song4.artist}</div>
+                <div class="thumbnail"><img src="${list.chill.song4.img}" alt="" width="100px"></div>
+                <div class="song-name">${list.chill.song4.name}</div>
+                <div class="artist">${list.chill.song4.artist}</div>
                  <div class="audio-player">
-                    <audio loop  class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                    <audio loop  class="myAudio" src="${list.chill.song4.src}"></audio>
                     <i class="fa fa-play play-button" aria-hidden="true"></i>
                     <div class="progress-container">
                         <div class="progress-bar"></div>
@@ -301,8 +317,8 @@ document.querySelector('.chill').addEventListener('click',()=>{
         
     setTimeout(()=>{
         tunesSection.classList.add('show');
-        themeChange("#d0f0f7", "#2b3e50");
-    },500);
+        themeChange("#d0f0f7", "#2b3e50","Quicksand","sans-serif");
+    },1000);
     playPause();
 });
 
@@ -314,7 +330,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="song-name">${list.depression.song1.name}</div>
                     <div class="artist">${list.depression.song1.artist}</div>
                     <div class="audio-player">
-                        <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                        <audio loop class="myAudio" src="${list.depression.song1.src}"></audio>
                         <i class="fa fa-play play-button" aria-hidden="true"></i>
                         <div class="progress-container">
                             <div class="progress-bar"></div>
@@ -328,7 +344,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="song-name">${list.depression.song2.name}</div>
                     <div class="artist">${list.depression.song2.artist}</div>
                      <div class="audio-player">
-                        <audio loop class="myAudio"src="./songs/Boa Duvet Best Part .mp3"></audio>
+                        <audio loop class="myAudio"src="${list.depression.song2.src}"></audio>
                         <i class="fa fa-play play-button" aria-hidden="true"></i>
                         <div class="progress-container">
                             <div class="progress-bar"></div>
@@ -342,7 +358,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="song-name">${list.depression.song3.name}</div>
                     <div class="artist">${list.depression.song3.artist}</div>
                     <div class="audio-player">
-                        <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                        <audio loop class="myAudio" src="${list.depression.song3.src}"></audio>
                         <i class="fa fa-play play-button" aria-hidden="true"></i>
                         <div class="progress-container">
                             <div class="progress-bar"></div>
@@ -356,7 +372,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="song-name">${list.depression.song4.name}</div>
                     <div class="artist">${list.depression.song4.artist}</div>
                      <div class="audio-player">
-                        <audio loop class="myAudio" src="./songs/Boa Duvet Best Part .mp3"></audio>
+                        <audio loop class="myAudio" src="${list.depression.song4.src}"></audio>
                         <i class="fa fa-play play-button" aria-hidden="true"></i>
                         <div class="progress-container">
                             <div class="progress-bar"></div>
@@ -370,14 +386,15 @@ document.querySelector('.depression').addEventListener('click',()=>{
 
         setTimeout(()=>{
             tunesSection.classList.add('show');
-            themeChange("#1a1a1a", "#cccccc");
-        },500);
+            themeChange("#1a1a1a", "#cccccc","Roboto Condensed", "sans-serif");
+        },1000);
         playPause();
 });
 
 
 // for the link color change:
-function themeChange(bgcolour,colour){
+function themeChange(bgcolour,colour,font,bfont){
+    // document.body.style.fontFamily=`${font,bfont}`;
     document.body.style.backgroundColor=`${bgcolour}`;
     document.body.style.color=`${colour}`;
     const  links = document.body.querySelectorAll('a');
@@ -445,4 +462,3 @@ function playPause(){
         })
     });
 };
-

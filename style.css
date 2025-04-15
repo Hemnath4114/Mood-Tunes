@@ -1,10 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
+    scroll-behavior: smooth;
+    position: relative;
+    height:100vh;
+    font-family: 'Roboto',sans-serif;
     transition: all 1s ease-in-out;
 }
 
 .navbar{
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,11 +34,11 @@ body{
 }
 
 .logo{
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .about{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .intro{
@@ -63,6 +80,7 @@ body{
     padding: 10px 20px;
     border: 1px solid rgb(0, 0, 0) ;
     border-radius: 20px;
+    transition: all 1s ease;
 }
 
 
@@ -79,9 +97,10 @@ body{
 
 .tunes{
     opacity: 0;
+    height:50vh ;
     transform: translateY(-10px);
     transform: translateX(-10px);
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -199,6 +218,68 @@ body{
     border: 1px solid transparent;
   }
 
+ .category a:hover{
+   border: 1px solid transparent;
+  }
 
-  /* for romantic theme */
+
+  footer{
+    padding:  1rem;
+    padding-bottom: 0;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer a{
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  footer a:hover{
+    opacity: 0.8;
+  }
+  
+
+  .footer-container{
+    display: grid;
+    grid-template-areas: "title title title title"
+                         "github linkedin mail insta"
+                         "copy copy copy copy";
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto 1fr auto;
+    place-content: center;
+    row-gap: 1rem;
+  }
+
+  .footer-item1{
+    place-self: center;
+    grid-area: title;
+  }
+  .footer-item2{
+    place-self: center;
+    grid-area: github;
+
+  }
+  .footer-item3{
+    place-self: center;
+    grid-area: linkedin;
+  }
+
+  .footer-item4{
+    place-self: center;
+    grid-area: mail;
+  }
+
+  .footer-item5{
+    place-self: center;
+    grid-area: insta;
+  }
+
+  .footer-item6{
+    place-self: center;
+    grid-area: copy;
+  }
+  
 
