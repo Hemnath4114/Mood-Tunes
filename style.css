@@ -10,13 +10,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html,body{
+  height: 100%;
+}
 body{
     scroll-behavior: smooth;
     position: relative;
-    height:100vh;
     font-family: 'Roboto',sans-serif;
     transition: all 1s ease-in-out;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+  flex-grow: 1;
 }
 
 .navbar{
@@ -89,6 +98,7 @@ body{
     opacity: 1;
     transform: translateY(20px);
     padding: 0% 2%;
+    padding-bottom: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 4%;
@@ -97,7 +107,6 @@ body{
 
 .tunes{
     opacity: 0;
-    height:50vh ;
     transform: translateY(-10px);
     transform: translateX(-10px);
     transition: all 0.4s ease-in-out;
@@ -226,7 +235,7 @@ body{
   footer{
     padding:  1rem;
     padding-bottom: 0;
-    margin-top: 5vh;
+    margin-top: auto;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -283,3 +292,161 @@ body{
   }
   
 
+@media  screen and (max-width: 430px) {
+  
+  .navbar{
+    padding: 0px 10px ;
+  }
+  .logo a{
+    font-size: 1.5rem;
+  }
+  .about a{
+    font-size: 1rem;
+  }
+
+  .intro{
+    padding: 3rem 0rem;
+  }
+  .main-logo{
+    font-size: 3rem;
+  }
+  .tag-line{
+    font-size: 0.7rem;
+  }
+
+  .category{
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 2px;
+  }
+  .category a{
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+  }
+  .tunes-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    min-width: 80%;
+    place-self: center;
+    min-height: max-content;
+  }
+
+  .tunes-item{
+    place-self: center;
+    width: 70%;
+    grid-template-rows: 1fr auto auto auto auto;
+  }
+  .song-name{
+    font-size: 1.5rem;
+  }
+  .artist{
+    font-size: 1rem;
+  }
+  .audio-player{
+    width: 100%
+  }
+  .spotify-link{
+    padding-top: 1rem;
+  }
+  .spotify-link a{
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .footer-container{
+    row-gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .footer-item1,.footer-item2,.footer-item3,.footer-item4,.footer-item5{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1024px){
+  .navbar{
+    padding: 1rem 2rem ;
+  }
+  .logo a{
+    font-size: 3rem;
+  }
+  .about a{
+    font-size: 2rem;
+  }
+
+  .intro{
+    padding: 3rem 0rem;
+  }
+  .main-logo{
+    font-size: 7rem;
+  }
+  .tag-line{
+    font-size: 1.5rem;
+  }
+
+  .category{
+    padding: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 1rem;
+  }
+  .category a{
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .tunes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    min-width: 100%;
+    place-self: center;
+    min-height: max-content;
+  }
+
+  .tunes-item{
+    place-self: center;
+    width: 70%;
+    row-gap: 1rem;
+    grid-template-rows: 1fr auto auto auto auto;
+  }
+  .thumbnail img{
+    width: 150px;
+    height: auto;
+  }
+  .song-name{
+    font-size: 2.5rem;
+  }
+  .artist{
+    font-size: 1.5rem;
+  }
+  .audio-player{
+  
+    width: 100%
+  }
+  .progress-container{
+    height: 0.3rem;
+  }
+  .volume-on,.play-button{
+    font-size: 1.5rem;
+  }
+  .spotify-link{
+    padding-top: 1rem;
+  }
+  .spotify-link a{
+    padding: 0.4rem 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .footer-container{
+    row-gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .footer-item1,.footer-item2,.footer-item3,.footer-item4,.footer-item5{
+    font-size: 2rem;
+  }
+  .footer-item6{
+    font-size: 2rem;
+  }
+}

@@ -1,25 +1,25 @@
 const list = {
     romantic:{
         song1:{
-            img: "/images/green.jpg",
+            img: "images/X's (Cigarettes After Sex).jfif",
             name: "Apocalypse",
             artist: "Cigarettes After Sex",
             src: "./songs/Romantic/Apocalypse.mp3"
         },
         song2:{
-            img: "/images/green.jpg",
+            img: "images/X's (Cigarettes After Sex).jfif",
             name: "Heavenly",
             artist: "Cigarettes After Sex",
             src: "./songs/Romantic/Heavenly.mp3"
         },
         song3:{
-            img: "/images/green.jpg",
+            img: "images/12aa17a3-9609-470c-bd62-d6fac94b7d3c.jfif",
             name: "Wanna be yours",
             artist: "Artic Monkeys",
             src:"songs/Romantic/I wanna be yours .mp3"
         },
         song4:{
-            img: "/images/green.jpg",
+            img: "images/_golden hour - Single de JVKE en Apple Music.jfif",
             name: "Golden Hous",
             artist: "JVKE",
             src:"songs/Romantic/JVKE - golden hour.mp3"
@@ -29,25 +29,25 @@ const list = {
 
     energetic:{
         song1:{
-            img: "/images/green.jpg",
+            img: "images/3413397e-a3fa-4d98-8e7e-5e7650e31389.jfif",
             name: "All The Stars",
             artist: "Kedrick, SZA",
             src:"songs/energetic/All The Stars.mp3"
         },
         song2:{
-            img: "/images/green.jpg",
+            img: "images/_Песня «Blinding Lights» (The Weeknd) в….jfif",
             name: "Blinding lights",
             artist: "Weeknd",
             src:"songs/energetic/Blinding lights.mp3"
         },
         song3:{
-            img: "/images/green.jpg",
+            img: "images/b34718f7-4796-415d-b26b-54629606bc8f.jfif",
             name: "F!en",
             artist: "Travis Scott",
             src:"songs/energetic/F!EN nokia ringtone.mp3"
         },
         song4:{
-            img: "/images/green.jpg",
+            img: "images/GNX RECOLOR #kendricklamar #kendrick #gnx #oklamar….jfif",
             name: "Not Like Us",
             artist: "Kendrick Lamar",
             src:"songs/energetic/Not Like Us .mp3"
@@ -57,25 +57,25 @@ const list = {
 
     chill:{
         song1:{
-            img: "/images/green.jpg",
+            img: "images/Twilight album by Bôa album cover.jfif",
             name: "Boa Duvet",
             artist: "Boa",
             src:"songs/chill/Boa Duvet Best Part .mp3"
         },
         song2:{
-            img: "/images/green.jpg",
+            img: "images/Sabrina Carpenter _ just wanted to put out a….jfif",
             name: "Espresso",
             artist: "Sabrina Carpenter",
             src:"songs/chill/Espresso.mp3"
         },
         song3:{
-            img: "/images/green.jpg",
+            img: "images/b22448f7-b53a-4bc6-b999-991fd26650ef.jfif",
             name: "Let me down ",
             artist: "Alec Benjamin",
             src:"songs/chill/Let me down slowly.mp3"
         },
         song4:{
-            img: "/images/green.jpg",
+            img: "images/046821b1-c861-4f7c-9080-12a1501425f7.jfif",
             name: "Sunroof",
             artist: "Nicky Youre",
             src:"songs/chill/Sunroof .mp3"
@@ -85,25 +85,25 @@ const list = {
 
     depression:{
         song1:{
-            img: "/images/green.jpg",
+            img: "images/4477ea16-5848-4cd1-b989-ee015965f1c1.jfif",
             name: "Lonely",
             artist: "Akon",
             src:"songs/depression/Akon lonley .mp3"
         },
         song2:{
-            img: "/images/green.jpg",
+            img: "images/Joel Sunny 🌞 on Instagram_ _luminary origin….jfif",
             name: "Luminary",
             artist: "Joel Sunny",
             src:"songs/depression/Luminary.mp3"
         },
         song3:{
-            img: "/images/green.jpg",
+            img: "images/Arcade.jfif",
             name: "Arcade",
             artist: "Ducane Laurence",
             src:"songs/depression/Arcade .mp3"
         },
         song4:{
-            img: "/images/green.jpg",
+            img: "images/Somewhere Only We Know   « and if you got a minute….jfif",
             name: "Somewhere Only",
             artist: "Keane",
             src:"songs/depression/Somwere only we know.mp3"
@@ -340,7 +340,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
                 <div class="tunes-item">
-                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="thumbnail"><img src="${list.depression.song2.img}" alt="" width="100px"></div>
                     <div class="song-name">${list.depression.song2.name}</div>
                     <div class="artist">${list.depression.song2.artist}</div>
                      <div class="audio-player">
@@ -354,7 +354,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
                 <div class="tunes-item">
-                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="thumbnail"><img src="${list.depression.song3.img}" alt="" width="100px"></div>
                     <div class="song-name">${list.depression.song3.name}</div>
                     <div class="artist">${list.depression.song3.artist}</div>
                     <div class="audio-player">
@@ -368,7 +368,7 @@ document.querySelector('.depression').addEventListener('click',()=>{
                     <div class="spotify-link"><a href="#" class="spo-link">Spotify</a></div>
                 </div>
                 <div class="tunes-item">
-                    <div class="thumbnail"><img src="${list.depression.song1.img}" alt="" width="100px"></div>
+                    <div class="thumbnail"><img src="${list.depression.song4.img}" alt="" width="100px"></div>
                     <div class="song-name">${list.depression.song4.name}</div>
                     <div class="artist">${list.depression.song4.artist}</div>
                      <div class="audio-player">
