@@ -111,8 +111,6 @@ main{
     transform: translateX(-10px);
     transition: all 0.4s ease-in-out;
 }
-
-
 .tunes-item{
     background: rgba(255, 255, 255, 0.1);
     box-shadow:   0 4px 8px rgba(0, 0, 0, 0.2),
@@ -139,6 +137,7 @@ main{
     justify-content: center;
     align-items: center;
     width: fit-content;
+    height: 100px;
 }
 
 
@@ -291,6 +290,37 @@ main{
     grid-area: copy;
   }
   
+  .about-section{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .about-section-reveal{
+    opacity: 1;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:   0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.15),0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 20%;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  .name{
+    font-size: larger;
+  }
 
 @media  screen and (max-width: 430px) {
   
@@ -362,6 +392,16 @@ main{
   .footer-item1,.footer-item2,.footer-item3,.footer-item4,.footer-item5{
     font-size: 1.5rem;
   }
+
+  .about-section-reveal{
+    font-size: 0.7rem;
+    max-width: 80%;
+    right: 1rem;
+    top: 2rem;
+    padding: 0.3rem;
+    line-height: 0.8rem;
+  }
+  
 }
 
 @media screen and (min-width: 431px) and (max-width: 1024px){
@@ -411,9 +451,14 @@ main{
     row-gap: 1rem;
     grid-template-rows: 1fr auto auto auto auto;
   }
+  .thumbnail{
+    width: max-content;
+    height: max-content;
+  }
   .thumbnail img{
+
     width: 150px;
-    height: auto;
+    height:150px;
   }
   .song-name{
     font-size: 2.5rem;
@@ -449,4 +494,10 @@ main{
   .footer-item6{
     font-size: 2rem;
   }
+  .about-section-reveal{
+   max-width: 60%;
+   font-size: 1rem;
+
+  }
 }
+
