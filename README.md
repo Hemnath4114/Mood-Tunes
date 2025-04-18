@@ -41,7 +41,7 @@ To run this project locally, you just need a browser to view the HTML file. No b
 ![About](assets/about.png)
 
 ### 7. mobile Page
-![Mobile](assets/mobile.png)
+![Mobile](assets/mobil.png)
 
 ### 8. mobile page
 ![Mobile](assets/mobile-2.png)
