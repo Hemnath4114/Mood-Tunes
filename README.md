@@ -21,7 +21,8 @@ Mood Tunes is a web-based music playlist generator that tailors soundtracks base
 ### Prerequisites
 To run this project locally, you just need a browser to view the HTML file. No backend setup is required.
 
-##Screenshots
+## Screenshots
+
 ### 1. Home Page
 ![Home Page](assets/home.png)
 
