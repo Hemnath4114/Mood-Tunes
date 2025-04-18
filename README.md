@@ -41,10 +41,10 @@ To run this project locally, you just need a browser to view the HTML file. No b
 ![About](assets/about.png)
 
 ### 7. mobile Page
-![Mobile](assets/mobil.png)
+![Mobile](assets/mobile.png)
 
 ### 8. mobile page
-![Mobile](assets/mobile-2.png)
+![Mobile](assets/mobil-2.png)
 
 ### 9. Tablet Page
 ![Tablet](assets/tablet.png)
