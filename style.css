@@ -321,6 +321,13 @@ main{
   .name{
     font-size: larger;
   }
+  .icon{
+    background-color: black;
+    border-radius: 1rem;
+    max-width: 50px;
+    margin-top: 10%;
+    margin-left: 50%;
+  }
 
 @media  screen and (max-width: 430px) {
   
@@ -400,6 +407,13 @@ main{
     top: 2rem;
     padding: 0.3rem;
     line-height: 0.8rem;
+  }
+  .icon{
+    background-color: black;
+    border-radius: 1rem;
+    max-width: 40px;
+    margin-top: 10%;
+    margin-left: 10%;
   }
   
 }
