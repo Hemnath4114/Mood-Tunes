@@ -1,63 +1,74 @@
-# Mood Tunes
+# 🎵 Mood Tunes
 
-## Overview
-Mood Tunes is a web-based music playlist generator that tailors soundtracks based on your mood. Whether you're feeling romantic, energetic, or chill, the website provides a unique music experience for every occasion. The platform is fully responsive, designed to work seamlessly on both mobile and desktop devices.
+**Mood Tunes** is a front-end-only music UI project built using **HTML, CSS, and JavaScript**, designed during my JavaScript learning phase. It categorizes music based on different moods like **Chill**, **Energetic**, **Romantic**, and more — providing a neat and responsive UI that visually reflects emotional tones.
 
-## Features
-- **Responsive Design:** The website adjusts beautifully on any screen size.
-- **Category-based Music Selection:** Users can choose from categories such as Romantic, Energetic, Chill, and Depression.
-- **Audio Player:** Integrated audio player to play songs directly from the platform.
-- **Spotify Integration:** Links to songs on Spotify for easy access.
-  
-## Technologies Used
-- **HTML5:** For the webpage structure.
-- **CSS3:** For styling and responsive design.
-- **JavaScript:** For dynamic interaction, audio controls, and effects.
-- **Font Awesome:** For icons and visual elements.
-- **Google Fonts:** For unique typography (Roboto, Great Vibes, Bebas Neue, etc.).
+This is a **practice project** without a database or backend integration.
 
-## Getting Started
+---
 
-### Prerequisites
-To run this project locally, you just need a browser to view the HTML file. No backend setup is required.
+## 📸 Screenshots
 
-## Screenshots
+| Homepage | Chill Mood | Mobile View |
+|----------|-------------|-------------|
+| ![Home](assets/home.png) | ![Chill](assets/chill.png) | ![Mobile](assets/mobile.png) |
 
-### 1. Home Page
-![Home Page](assets/home.png)
+---
 
-### 2. Romantic
-![Romantic](assets/romantic.png)
+## 🚀 Features
 
-### 3. Energetic
-![Energetic](assets/energetic.png)
+- 🎧 Mood-based music category UI  
+- 💡 DOM manipulation using JavaScript  
+- 📱 Responsive design for all screen sizes  
+- 🧠 Practiced core concepts of front-end development
 
-### 4. Chill
-![Chill](assets/chill.png)
+---
 
-### 5. Depression
-![Depression](assets/depression.png)
+## 🛠️ Tech Stack
 
-### 6. About
-![About](assets/about.png)
+- **HTML5** – Structure & layout  
+- **CSS3** – Styling and responsive design  
+- **JavaScript** – Core logic and interactivity  
 
-### 7. mobile Page
-![Mobile](assets/mobile.png)
+---
 
-### 8. mobile page
-![Mobile](assets/mobil-2.png)
+## 📁 Folder Structure
 
-### 9. Tablet Page
-![Tablet](assets/tablet.png)
-
-### 10. Tablet Page
-![Tablet](assets/tablet-about.png)
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-- Email: hemnath04112004@gmail.com
-- GitHub: [@Hemnath4114](https://github.com/Hemnath4114)
+Mood-Tunes/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│ ├── home.png
+│ ├── chill.png
+│ ├── ...
 
 
+
+---
+
+## ❌ Not Yet Live
+
+This app is **not hosted** as it doesn't include backend/database support yet. Future improvements may involve integrating APIs or adding user-specific mood-based music suggestions.
+
+---
+
+## 👨‍💻 Developer
+
+**Hemnath M.**  
+ B.Tech Information Technology  
+ Dhanalakshmi Srinivasan college of Engineering and Technology  
+ 📫 hemnath04112004@gmail.com  
+ 📍 Chennai, Tamil Nadu
+
+
+---
+
+## 💬 Feedback
+
+As a developer in progress, I’d love feedback or suggestions to improve both technically and in terms of UI/UX design. Feel free to open issues or fork this repository for improvements!
+
+---
+
+## 📃 License
+
+This project is released under the MIT License.
